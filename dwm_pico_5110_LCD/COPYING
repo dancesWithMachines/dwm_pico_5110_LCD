@@ -1,0 +1,71 @@
+The purpose of this document is to fullfil all necessary license agreements.
+The document has been splited into following parts:
+    1. Licensing / copyrights
+    2. Previous authors and copyrights
+    3. Changes made
+    4. 3rd party and non-gpl licenses
+
+1. Licensing / copyrights
+
+This library inherits GPLv3 license from the original source code.
+License agreement can be found in LICENSE file.
+
+Project: dwm_pico_5110_lcd
+Description: 5110 LCD C library for Raspberry Pi Pico.
+Copyright 2023 - 2023 M.Kusiak (timax)
+
+2. Previous authors and copyrights
+
+This library is based on Nokia-LCD5110-HAL library for STM32 devices.
+Link to the original source code: https://github.com/Zeldax64/Nokia-LCD5110-HAL
+
+The author of original library is github user Zeldax64, Caio Rodrigo.
+Link to the author's github page: https://github.com/Zeldax64?tab=repositories
+
+Source library is based on work done by:
+1) Tilen Majerle's
+    @website	http://stm32f4-discovery.com
+    @link	http://stm32f4-discovery.com/pcd8544-nokia-33105110-lcd-stm32f429-discovery-library/
+    This library was build for STM devices, but it doesn't run on HAL.
+    Tilen also has a great site about STM32.
+
+2) RinkyDinkElectronic's
+    @website http://www.RinkyDinkElectronics.com/
+    This library was built to control 5110 for Arduino.
+...as it was specified, by the author, Caio Rodrigo.
+
+3. Changes made
+
+Original library was converted to be used with Raspberry Pi Pico C/C++ SDK, rather than STM32 based boards.
+The library now uses SPI interface to interact with the LCD display.
+Various functions have been added to extend library's capabilities like: drawing circles, lines, triangles or filing shapes with color.
+Some of the functions and descriptions needed refactoring due to switching platforms.
+"Documentation like" comment was removed from source files.
+
+4. 3rd party and non-gpl licenses
+
+This library was made to be used with Raspberry Pi Pico C/C++ SDK, and uses methods provided by that software.
+SDK is shared under BSD 3 license.
+
+Copyright 2020 (c) 2020 Raspberry Pi (Trading) Ltd.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the
+following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following
+   disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following
+   disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products
+   derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-------------------------------------------------------------------------------------------------------------------------
