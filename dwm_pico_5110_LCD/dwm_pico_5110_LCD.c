@@ -223,6 +223,21 @@ void LCD_print(char *str, uint8_t x0, uint8_t row)
 }
 
 /**
+ * @brief Print a string on the LCD, align to center.
+ *        Valid only for single line strings.
+ *
+ * @param str     string to print.
+ * @param length  length of the string, without null terminator.
+ * @param row     row number (multiple of 8 lines).
+ */
+void LCD_printCenter(char *str, uint8_t length, uint8_t row)
+{
+  uint8_t x0 = length > LCD_LETTERS_IN_ROW ? 0 : (LCD_WIDTH - length * FONT_SYMBOL_WIDTH) / 2;
+
+  LCD_print(str, x0, row);
+}
+
+/**
  * @brief Updates a square of the screen according to given values.
  *
  * @param x0      starting point on x-axis.

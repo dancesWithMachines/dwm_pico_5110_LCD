@@ -32,6 +32,8 @@
 #define LCD_DISPLAY_INVERTED 0x0D
 
 #define LCD_COLUMN_HEIGHT 8
+#define LCD_ROW_NUMBER 6
+#define LCD_LETTERS_IN_ROW LCD_WIDTH / FONT_SYMBOL_WIDTH
 
 #define LCD_WIDTH 84
 #define LCD_HEIGHT 48
@@ -73,13 +75,12 @@ void LCD_setSCLK(uint16_t PIN);
 
 /*----- Library Functions -----*/
 
-void LCD_send(uint8_t val, uint16_t size);
-void LCD_write(uint8_t data, uint8_t mode);
 void LCD_init();
 void LCD_invert(bool mode);
 void LCD_invertText(bool mode);
 void LCD_putChar(char c);
 void LCD_print(char *str, uint8_t x0, uint8_t row);
+void LCD_printCenter(char *str, uint8_t length, uint8_t row);
 void LCD_clrScr();
 void LCD_goXY(uint8_t x0, uint8_t row);
 
