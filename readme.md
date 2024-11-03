@@ -1,6 +1,6 @@
 # dwm_pico_5110_LCD
 A C library for controlling 5110 LCD display with Raspberry Pi Pico using SPI interface.</br>
-![Photo](https://danceswithmachines.github.io/assets/pico_LCD_lib/picolib.jpg)
+![Photo](https://raw.githubusercontent.com/wiki/dancesWithMachines/dwm_pico_5110_LCD/picolib.jpg)
 
 ## Quick start guide
 Information how to build, use or include library in your project can be found in the wiki section of this repository or on [dancesWithMachines.github.io](https://danceswithmachines.github.io/pico_LCD_lib.html)
